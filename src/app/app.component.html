@@ -1,0 +1,24 @@
+<p
+  class="foo"
+  style="color: red"
+  [style.backgroundColor]="'yellow'"
+  [style.fontSize.px]="20"
+>
+  {{ name }}
+</p>
+<br />
+<app-hello></app-hello>
+<p>{{ user.name }}</p>
+<p>{{ user.age }}</p>
+
+<input [type]="'text'" [value]="user.name" />
+<button type="button" (click)="hander()">onclick</button>
+
+<input type="text" [ngModel]="name" (ngModelChange)="name = $event" />
+<div class="box red-border"></div>
+<br />
+<app-progress-bar></app-progress-bar>
+
+<app-author-list></app-author-list>
+
+<toggle [(checked)]="isChecked"></toggle>
